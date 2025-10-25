@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>My URL Shortener</h1>
+        <h1>Linkify : URL Shortener</h1>
         <div>
             <input type="text" id="long-url-input" placeholder="Enter your long URL...">
             <button id="shorten-button">Shorten</button>
@@ -44,7 +44,7 @@
             if (response.ok) {
                 // This 'short_url' key MUST match the JSON you return from your backend
                 resultDiv.innerHTML = `
-                    Your short URL: 
+                    Your short URL:
                     <a href="${data.short_url}" target="_blank">${data.short_url}</a>
                 `;
             } else {
@@ -53,5 +53,8 @@
             }
         });
     </script>
+    <footer>
+        Made with ❤️ by Ashwini
+    </footer>
 </body>
 </html>
